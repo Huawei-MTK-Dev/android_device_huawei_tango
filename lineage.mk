@@ -11,7 +11,7 @@ PRODUCT_RELEASE_NAME := TAG_AL00
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/HUAWEI/TAG_AL00/device_TAG_AL00.mk)
+$(call inherit-product, device/huawei/tango/device_tango.mk)
 
 # Configure dalvik heap
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
@@ -20,14 +20,12 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := TAG_AL00
-PRODUCT_NAME := lineage_TAG_AL00
+PRODUCT_DEVICE := tango
+PRODUCT_NAME := lineage_tango
 PRODUCT_BRAND := HUAWEI
 PRODUCT_MODEL := HUAWEI TAG-AL00
 PRODUCT_MANUFACTURER := HUAWEI
 
-PRODUCT_DEFAULT_LANGUAGE := zh
-PRODUCT_DEFAULT_REGION   := CN
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.timezone=Asia/Shanghai
+PRODUCT_DEFAULT_LANGUAGE := en
+PRODUCT_DEFAULT_REGION   := US
 

@@ -1,5 +1,5 @@
-DEVICE_PATH := device/HUAWEI/TAG_AL00
-VENDOR_PATH := vendor/HUAWEI/TAG_AL00
+DEVICE_PATH := device/huawei/tango
+VENDOR_PATH := vendor/huawei/tango
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
@@ -52,8 +52,8 @@ BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x03f88000
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
-TARGET_KERNEL_CONFIG := AL00_defconfig
-TARGET_KERNEL_SOURCE := kernel/HUAWEI/TAG_AL00
+TARGET_KERNEL_CONFIG := tango_defconfig
+TARGET_KERNEL_SOURCE := kernel/huawei/tango
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 # end of commented lines
 #Dat / zip

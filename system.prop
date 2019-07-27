@@ -1,10 +1,10 @@
 #
-# system.prop for ono
+# system.prop for tango
 #
-# from device/ginreen/ginr6735_65c_l1/system.prop
+# from device/huawei/tango/system.prop
 #
 #
-# system.prop for generic sdk
+# system.prop for huawei sdk
 #
 rild.libpath=mtk-ril.so
 rild.libargs=-d /dev/ttyC0
